@@ -1,0 +1,183 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFF8E7;
+    color: #2F2F2F;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #7B2D26;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .subtitle {
+    font-style: italic;
+    animation: fadeIn 3s ease-in;
+  }
+  
+  nav {
+    margin-top: 1rem;
+  }
+  
+  nav a {
+    color: #C98A00;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #FFF8E7;
+  }
+  
+  .intro {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .featured-cities {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .card {
+    background: white;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    transition: transform 0.3s, background-color 0.3s;
+    border-radius: 5px;
+
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    background-color: #C98A00;
+    color: white;
+
+  }
+  
+  .gallery {
+    padding: 2rem;
+    background-color: #FFF2D9;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  .city-day {
+    background-color: #7B2D26;
+    color: white;
+    padding: 2rem;
+    
+  }
+  
+  .highlight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #A6A867;
+    padding: 2rem;
+    transition: background-color 0.5s;
+    border-radius: 10px;
+    
+  }
+  
+  .highlight:hover {
+    background-color: #7B2D26;
+    
+  }
+  
+  .submit {
+    padding: 2rem;
+    background-color: #FFF8E7;
+  }
+  
+  form {
+    display: grid;
+    gap: 1rem;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  input, textarea {
+    padding: 0.5rem;
+    font-family: inherit;
+    border: 1px solid #7B2D26;
+    transition: border-color 0.3s;
+    border-radius: 4px;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #C98A00;
+    outline: none;
+  }
+  
+  button {
+    padding: 0.7rem;
+    background-color: #7B2D26;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #C98A00;
+    color: #000;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #7B2D26;
+    color: white;
+  }
+  
+  h2, h3 {
+    font-family: 'Noto Serif', serif;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  /*cities page*/ 
+  .city-page {
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .city-img {
+    max-width: 400px;
+    border-radius: 10px;
+  }
+  
+  .city-info {
+    max-width: 500px;
+    font-family: 'Noto Serif', serif;
+    background-color: #FFF2D9;
+    padding: 1rem;
+    border-left: 5px solid #7B2D26;
+  }
+  .card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
